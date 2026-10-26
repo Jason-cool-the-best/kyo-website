@@ -1,0 +1,157 @@
+
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #edf5ff;
+  background: #07111f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 8%;
+  border-bottom: 1px solid #26364b;
+}
+
+.logo {
+  color: #4de0ac;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+}
+
+nav a {
+  color: #b9c8da;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #4de0ac;
+}
+
+main {
+  width: min(900px, 84%);
+  margin: auto;
+}
+
+.hero {
+  padding: 100px 0 70px;
+}
+
+.tag {
+  color: #4de0ac;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(38px, 7vw, 68px);
+  line-height: 1.08;
+  margin: 22px 0;
+}
+
+.hero > p:not(.tag),
+.panel > p {
+  color: #afbed0;
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+.button,
+button {
+  display: inline-block;
+  background: #4de0ac;
+  color: #07111f;
+  padding: 13px 20px;
+  margin-top: 18px;
+  border: 0;
+  border-radius: 9px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.panel {
+  background: #101e30;
+  border: 1px solid #26364b;
+  border-radius: 16px;
+  padding: 28px;
+  margin: 25px 0;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.version {
+  border-left: 3px solid #4de0ac;
+  padding: 4px 0 4px 18px;
+  margin: 25px 0;
+}
+
+.version span {
+  color: #4de0ac;
+  font-weight: bold;
+}
+
+.version p {
+  color: #afbed0;
+}
+
+input {
+  width: min(100%, 480px);
+  padding: 14px;
+  border: 1px solid #405269;
+  border-radius: 8px;
+  background: #07111f;
+  color: white;
+}
+
+#answer {
+  color: #4de0ac;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  color: #8192a8;
+  padding: 35px 15px;
+}
+
+@media (max-width: 520px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding-top: 65px;
+  }
+
+  .panel {
+    padding: 20px;
+  }
+}
